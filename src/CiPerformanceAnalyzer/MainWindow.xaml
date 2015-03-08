@@ -1,0 +1,25 @@
+﻿<Window x:Class="CiPerformanceAnalyzer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CI Performance Analyzer"
+        Icon="icon.jpg"
+        Background="Black"
+        WindowState="Maximized"
+        Closing="MainWindow_OnClosing"
+        >
+    <Grid x:Name="RootGrid">
+        <TabControl Background="Black" BorderThickness="0">
+            <TabItem Header="主系主CPU" x:Name="TabPrimarySeriesPrimaryCpu" MouseLeftButtonUp="TabPrimarySeriesPrimaryCpu_OnMouseLeftButtonUp">
+            </TabItem>
+            <TabItem Header="主系从CPU" x:Name="TabPrimarySeriesSlaveCpu" MouseLeftButtonUp="TabPrimarySeriesSlaveCpu_OnMouseLeftButtonUp">
+            </TabItem>
+            <TabItem Header="备系主CPU" x:Name="TabSpareSeriesPrimaryCpu" MouseLeftButtonUp="TabSpareSeriesPrimaryCpu_OnMouseLeftButtonUp">
+            </TabItem>
+            <TabItem Header="备系从CPU" x:Name="TabSpareSeriesSlaveCpu" MouseLeftButtonUp="TabSpareSeriesSlaveCpu_OnMouseLeftButtonUp">
+            </TabItem>
+        </TabControl>
+        <Grid x:Name="Shower">
+            
+        </Grid>
+    </Grid>
+</Window>
